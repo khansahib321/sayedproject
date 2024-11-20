@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Photo Gallery</title>
+  <style>
+    #image {
+      width: 350px;
+      height: 350px;
+      border: 2px solid #ccc;
+      background-color: lightgray;
+      background-size: cover;
+      background-position: center;
+      text-align: center;
+      line-height: 350px;
+      color: #333;
+      font-size: 20px;
+    }
+
+    .image-gallery {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    img {
+      width: 120px;
+      margin: 10px;
+      cursor: pointer;
+    }
+
+    img:hover {
+      transform: scale(1.1);
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin-top: 20px;
+      cursor: pointer;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="image">
+    Hover over an image below to display here.
+  </div>
+
+  <div class="image-gallery">
+    <img src="Images/img-1.jpeg" id="img1" />
+    <img src="Images/img-2.jpeg" id="img2" />
+    <img src="Images/img-3.jpeg" id="img3" />
+  </div>
+
+  <button id="undoButton">Undo</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
